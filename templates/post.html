@@ -1,17 +1,21 @@
 <html>
 
 <head>
-    <title>Post</title>
-
+    <title>글쓰는곳</title>
+    <link rel="stylesheet" href="/static/deco.css">
 
 </head>
 <body>
+    <a href="/" class="link_title">메인페이지로</a><br>
     <form action="/post" method="POST">
-        <p>정보입력: <input type="text" name="test"></p>
+        <fieldset>
+            <legend>정보입력</legend>
+            <input type="text" name="test">
+        </fieldset>
         <input type="submit" value="정보넘기기">
     </form>
 
-
+  
 
 </body>
 </html>
