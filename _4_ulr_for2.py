@@ -1,4 +1,11 @@
-from flask import Flask, url_for
+from flask import Flask
+from flask import render_template
+from flask import request
+from flask import url_for
+from flask import redirect
+from flask import make_response
+from flask import add_profile
+
 app = Flask(__name__)
 
 @app.route("/hello/")

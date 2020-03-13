@@ -3,10 +3,12 @@
 <head>
     <title>글쓰는곳</title>
     <link rel="stylesheet" href="/static/deco.css">
-
+    {%include 'everything.html' %}<br>
 </head>
 <body>
-    <a href="/" class="link_title">메인페이지로</a><br>
+    <a href="/uni" class="link_title">메인페이지로</a><br>
+    <a href="/board" class="link_title">게시판으로</a>
+    <!-- 이미지에 링크를 걸어줌 두가지 코드를 합체! <a href><img src=></a> -->
     <form action="/post" method="POST">
         <fieldset>
             <legend>정보입력</legend>

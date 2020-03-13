@@ -4,14 +4,16 @@
     <title>메인 페이지</title>
     <link rel="stylesheet" href="/static/deco.css">
     <link rel="shortcut icon" type="image/x-icon" href="/static/main.ico" />
+    {%include 'everything.html' %}<br>
 </head>
 <body>
-    <h1>메인페이지 입니다</h1>
-    <fieldset>
+    <h1 class="main_title">Cube</h1>
+    <fieldset class="ineedbold">
         <legend>메뉴</legend>
             <a href="/profile" class="link_title">프로필로</a><br>
             <a href="/dd" class="link_title">그냥 만들어본곳</a><br>
-            <a href="/test" class="link_title">포스팅하러가기</a>
+            <a href="/test" class="link_title">포스팅하러가기</a><br>
+            <a href="/board" class="link_title">게시판으로</a>
     </fieldset>
 </body>
 
