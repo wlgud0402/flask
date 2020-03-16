@@ -37,6 +37,12 @@ def check():
 def uni():
     return render_template("main.html")
 
+@app.route("/market")
+def market():
+    return render_template("market.html")
+
+
+
 @app.route("/profile")
 def profile():
     return render_template("profile.html")
@@ -66,6 +72,9 @@ def post():
     value = request.form['test']
     db_board.append(value)
     return redirect('/board') 
+
+db_bag=[]
+@app.route("/bag", methods=['POST'])
 
 if __name__ == "__main__":
     app.run(port=3001)

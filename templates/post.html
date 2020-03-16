@@ -10,11 +10,13 @@
     <a href="/board" class="link_title">게시판으로</a>
     <!-- 이미지에 링크를 걸어줌 두가지 코드를 합체! <a href><img src=></a> -->
     <form action="/post" method="POST">
+        <div class="search_box">
         <fieldset>
-            <legend>정보입력</legend>
-            <input type="text" name="test">
+            <legend class="blind">정보입력</legend>
+            <input class="input_box" stype="text" name="test">
         </fieldset>
-        <input type="submit" value="정보넘기기">
+        </div>
+        <input type="submit" class="submit_text" value="등록">
     </form>
 
   
